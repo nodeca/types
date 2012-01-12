@@ -1,7 +1,7 @@
 {
   "name"            : "types",
   "version"         : "0.0.1",
-  "description"     : "Missing Node.JS stdlib",
+  "description"     : "Hash, SortedSet",
   "keywords"        : ["stdlib", "sorted set", "set"],
   "homepage"        : "https://github.com/nodeca/types",
 
