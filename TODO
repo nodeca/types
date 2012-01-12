@@ -1,2 +1,2 @@
 - Add tests
-- Add & improve docs
+- Improve Hash - to use `obj#hash()` method if exists.
