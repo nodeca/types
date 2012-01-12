@@ -1,3 +1,2 @@
 - Add tests
 - Add Hash (from js-yaml)
-- Improve SortedSet (use prototypes)
