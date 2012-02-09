@@ -1,2 +1,0 @@
-- Add tests
-- Improve Hash - to use `obj#hash()` method if exists.
