@@ -1,14 +1,14 @@
 'use strict';
 
 
-var Assert = require('assert');
-var SortedSet = require('../lib/types/sorted-set');
+var Assert      = require('assert');
+var SortedList  = require('../lib/types/sorted_list');
 
 
-require('vows').describe('SortedSet').addBatch({
+require('vows').describe('SortedList').addBatch({
   'Adding weights': {
     topic: function () {
-      var s = new SortedSet();
+      var s = new SortedList();
 
       s.add(-10, '-10');
       s.add(-20, '-20');
