@@ -1,7 +1,7 @@
 PATH        := ./node_modules/.bin:${PATH}
 
-NPM_PACKAGE := $(shell node -e 'console.log(require("./package.json").name)')
-NPM_VERSION := $(shell node -e 'console.log(require("./package.json").version)')
+NPM_PACKAGE := $(shell node -e 'process.stdout.write(require("./package.json").name)')
+NPM_VERSION := $(shell node -e 'process.stdout.write(require("./package.json").version)')
 
 TMP_PATH    := /tmp/${NPM_PACKAGE}-$(shell date +%s)
 
@@ -45,7 +45,7 @@ test: lint
 doc:
 	@if test ! `which ndoc` ; then \
 		echo "You need 'ndoc' installed in order to generate docs." >&2 ; \
-		echo "  $ npm install -g ndoc" >&2 ; \
+		echo "  $ make dev-deps" >&2 ; \
 		exit 128 ; \
 		fi
 	rm -rf ./doc
@@ -58,8 +58,9 @@ dev-deps:
 		echo "  See: http://npmjs.org/" >&2 ; \
 		exit 128 ; \
 		fi
-	npm install jshint -g
-	npm install --dev
+	which jshint > /dev/null || npm install jshint
+	which ndoc > /dev/null || npm install ndoc
+	npm install
 
 
 gh-pages:

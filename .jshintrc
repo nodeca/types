@@ -11,7 +11,7 @@
   "noarg"         : true,   // Prohibit use of `arguments.caller` and `arguments.callee`.
   "noempty"       : true,   // Prohibit use of empty blocks.
   "nonew"         : true,   // Prohibit use of constructors for side-effects.
-  "plusplus"      : true,   // Prohibit use of `++` & `--`.
+  "plusplus"      : false,  // Prohibit use of `++` & `--`.
   "regexp"        : false,  // Prohibit `.` and `[^...]` in regular expressions.
   "undef"         : true,   // Require all non-global variables be declared before they are used.
   "strict"        : true,   // Require `use strict` pragma  in every file.
@@ -32,6 +32,7 @@
   "iterator"      : false,  // Allow usage of __iterator__ property.
   "lastsemic"     : false,  // Tolerate semicolon omited for the last statement.
   "laxbreak"      : false,  // Tolerate unsafe line breaks e.g. `return [\n] x` without semicolons.
+  "laxcomma"      : true,   // This option suppresses warnings about comma-first coding style
   "loopfunc"      : false,  // Allow functions to be defined within loops.
   "multistr"      : false,  // Tolerate multi-line strings.
   "onecase"       : false,  // Tolerate swithes with only one case.
