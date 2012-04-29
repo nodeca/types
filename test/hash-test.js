@@ -88,5 +88,15 @@ require('vows').describe('Hash').addBatch({
       Assert.ok(h.hasKey(1));
       Assert.ok(!h.hasKey(2));
     }
+  },
+
+
+  'when defaultValue is function': {
+    topic: new Hash(function (h, k) { return h.set(k, []); }),
+
+    'it is called for unknown keys': function (h) {
+      Assert.isArray(h.get('foo'));
+      Assert.ok(h.hasKey('foo'));
+    }
   }
 }).export(module);
