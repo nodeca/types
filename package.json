@@ -1,8 +1,8 @@
 {
   "name"            : "types",
-  "version"         : "0.0.1",
+  "version"         : "0.1.0",
   "description"     : "Hash, SortedSet",
-  "keywords"        : ["stdlib", "sorted set", "set"],
+  "keywords"        : ["stdlib", "sorted list", "set", "hash"],
   "homepage"        : "https://github.com/nodeca/types",
 
   "author"          : "Aleksey V Zapparov <ixti@member.fsf.org> (http://ixti.net)",
