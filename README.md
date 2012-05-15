@@ -1,6 +1,7 @@
 Types
 =====
 
+[![Build Status](https://secure.travis-ci.org/nodeca/types.png?branch=master)](http://travis-ci.org/nodeca/types)
 
 Collection of extra types (structures, classes) for JavaScript.
 
