@@ -24,12 +24,12 @@ require('vows').describe('Hash').addBatch({
     topic: new Hash('none'),
 
     'arrays are not stringified (joined)': function (h) {
-      var k = [1,2,3];
+      var k = [1, 2, 3];
       h.store(k, 123);
 
       Assert.equal(h.retrieve(k), 123);
       Assert.equal(h.retrieve('1,2,3'), 'none');
-      Assert.equal(h.retrieve([1,2,3]), 'none');
+      Assert.equal(h.retrieve([1, 2, 3]), 'none');
     },
 
     'object are not stringified or ompared by values': function (h) {
